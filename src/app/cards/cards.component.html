@@ -1,0 +1,19 @@
+<div class="comments">
+  <div
+    [ngClass]="comment.point ? 'comment-active' : 'comment'"
+    *ngFor="let comment of comments"
+  >
+    <img src="../../assets/images/{{ comment.photo }}" alt="" />
+    <div class="container-person">
+      <div class="person">
+        <span class="name-person">{{ comment.name_person }} </span>
+        <span class="reaction">{{ comment.reaction }}</span
+        ><span class="person-comment"> {{ comment.person_comment }}</span
+        ><span class="club">{{ comment.club }}</span
+        ><span [ngClass]="comment.point ? 'point' : ''"></span>
+      </div>
+      <div class="time-comment">{{ comment.time_comment }}</div>
+      <div  [ngClass]="comment.real_comment ? 'real-comment' : ''">{{ comment.real_comment }}</div>
+    </div>
+  </div>
+</div>

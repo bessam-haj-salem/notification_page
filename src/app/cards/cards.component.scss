@@ -1,0 +1,73 @@
+@import "../../styles/variables";
+
+.comment-active,
+.comment {
+  display: flex;
+  padding: 0.7rem;
+  gap: 1rem;
+  margin: 0 0 1rem 0;
+  border-radius: 5px;
+}
+.comment-active {
+  background-color: $white-blue;
+}
+img {
+  width: 12%;
+  height: 12%;
+}
+.container-person {
+  font-size: 0.9rem;
+}
+.name-person {
+  font-weight: 800;
+}
+.reaction {
+  color: $white-blue4;
+}
+.person-comment {
+  font-weight: 800;
+  color: $white-blue4;
+}
+.time-comment {
+  color: $white-blue3;
+}
+.person {
+  line-height: 1.4;
+}
+.name-person,
+.reaction,
+.person-comment,
+.club {
+  margin-right: 0.2rem;
+}
+.club {
+  font-weight: 800;
+  color: $primary-blue;
+}
+.point {
+  background-color: $primary-red;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+.real-comment {
+    padding: 1rem;
+    border: 1px solid $white-blue2;;
+    margin-top: 0.5rem;
+    color: $white-blue4;
+}
+.container-person {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+// desktop preview
+@media (min-width: 870px) { 
+  .comments {
+    img {
+       width: 3%;
+    }
+  }
+}

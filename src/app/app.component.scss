@@ -1,0 +1,12 @@
+
+
+.container {
+    padding: 1.3rem 1rem 1rem;
+  }
+  
+  // desktop preview
+@media (min-width: 870px) { 
+  .container {
+    padding: 5.3rem 16rem 1rem;
+  }
+}
